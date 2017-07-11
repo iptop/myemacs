@@ -14,10 +14,11 @@
 ;;设置缩进
 (electric-indent-mode -1)
 
+;;关闭启动画面
 (setq inhibit-splash-srceen t)
 
 ;;显示行号
-(linum-mode t)
+(global-linum-mode t)
 
 ;;打开配置文件的函数
 (defun open-init-file ()
@@ -27,13 +28,19 @@
 (global-set-key (kbd "<f1>")
 		'open-init-file)
 
+;;启动自动补全
+(global-company-mode)
+
+;;设置光标样式为普通bar样式
+(setq-default cursor-type 'bar)
+
 ;;设置合适字体
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family #("微软雅黑" 0 4 (charset chinese-gbk)) :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
+ '(default ((t (:family #("微软雅黑" 0 4 (charset chinese-gbk)) :foundry "outline" :slant normal :weight normal :height 100 :width normal)))))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
