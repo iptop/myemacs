@@ -1,4 +1,5 @@
-;;隐藏工具栏
+
+
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -6,6 +7,9 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+
+
+;;隐藏工具栏
 (tool-bar-mode -1)
 
 ;;隐藏滚动条
@@ -33,6 +37,12 @@
 
 ;;设置光标样式为普通bar样式
 (setq-default cursor-type 'bar)
+
+;;启动elisp括号匹配
+(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+
+;;自动高亮光标所在的行
+(global-hl-line-mode)
 
 ;;设置合适字体
 (custom-set-faces
