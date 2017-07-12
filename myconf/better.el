@@ -12,6 +12,9 @@
 (require 'hungry-delete)
 (global-hungry-delete-mode)
 
+;;自动删除选中部分
+(delete-selection-mode t)
+
 ;;开启mini buffer增强功能插件
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
@@ -43,3 +46,18 @@
 
 ;;设置写入文件编码
 (setq default-buffer-file-coding-system 'utf-8)
+
+
+;;打开上次的文件记录
+
+(load "desktop") 
+
+(desktop-load-default)
+
+(desktop-read)
+
+;;当emacs退出时保存文件打开状态
+
+(add-hook 'kill-emacs-hook
+
+          '(lambda()(desktop-save "~/")))
