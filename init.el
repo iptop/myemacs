@@ -65,6 +65,11 @@
 (global-set-key (kbd "<f2>")
 		'open-pkg-list)
 
+
+;;开启增强功能插件
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+
 ;;配置增强版本M-x
 (global-set-key (kbd "M-x")
 		'counsel-M-x)
@@ -73,6 +78,12 @@
 (global-set-key (kbd "\C-s")
 		'swiper)
 
+;;配置增强版文件查找
+(global-set-key (kbd "C-x C-f")
+		'counsel-find-file)
+
+;;设置自动补全时间
+(setq-default company-idle-delay 0.01)
 
 ;;设置合适字体
 (custom-set-faces
