@@ -88,6 +88,9 @@
 ;;设置左右括号自动补齐
 (smartparens-global-mode t)
 
+;;自动加载被修改的文件
+(global-auto-revert-mode t)
+
 ;;设置合适字体
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
