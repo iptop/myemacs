@@ -65,12 +65,14 @@
 (global-set-key (kbd "<f2>")
 		'open-pkg-list)
 
-
-;;配置增强版 M-x
-(require 'smex)
-(smex-initialize)
+;;配置增强版本M-x
 (global-set-key (kbd "M-x")
-		'smex)
+		'counsel-M-x)
+
+;;配置增强版本搜索
+(global-set-key (kbd "\C-s")
+		'swiper)
+
 
 ;;设置合适字体
 (custom-set-faces
@@ -87,4 +89,6 @@
  '(custom-safe-themes
    (quote
     ("a49760e39bd7d7876c94ee4bf483760e064002830a63e24c2842a536c6a52756" default)))
- '(package-selected-packages (quote (swiper smex hungry-delete monokai-theme company))))
+ '(package-selected-packages
+   (quote
+    (counsel swiper smex hungry-delete monokai-theme company))))
