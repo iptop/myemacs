@@ -85,6 +85,9 @@
 ;;设置自动补全时间
 (setq-default company-idle-delay 0.01)
 
+;;设置左右括号自动补齐
+(smartparens-global-mode t)
+
 ;;设置合适字体
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
