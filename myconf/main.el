@@ -18,14 +18,18 @@
 	(load-file (concat dir (car files)))
 	(load-files (cdr files)
 		    dir ))))
-;;批量加载插件配置
+;;加载各种插件配置
 (load-files (cdr (cdr
 		  (directory-files
 		   "~/.emacs.d/myconf/addon")))
 	    "~/.emacs.d/myconf/addon/")
 
-;;启动elisp括号匹配
-(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+;;加载各种文件类型的配置
+(load-files (cdr (cdr
+		  (directory-files
+		   "~/.emacs.d/myconf/type")))
+	    "~/.emacs.d/myconf/type/")
+
 
 
 
