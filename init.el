@@ -72,9 +72,6 @@
 (global-set-key (kbd "M-x")
 		'smex)
 
-
-
-
 ;;设置合适字体
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -90,4 +87,4 @@
  '(custom-safe-themes
    (quote
     ("a49760e39bd7d7876c94ee4bf483760e064002830a63e24c2842a536c6a52756" default)))
- '(package-selected-packages (quote (smex hungry-delete monokai-theme company))))
+ '(package-selected-packages (quote (swiper smex hungry-delete monokai-theme company))))
