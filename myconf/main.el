@@ -1,40 +1,21 @@
 ;;加载ui相关配置文件
-(load-file "./ui.el")
+(load-file "~/.emacs.d/myconf/ui.el")
 
+;;加载函数定义
+(load-file "~/.emacs.d/myconf/fun.el")
 
-
-;;打开配置文件的函数
-(defun open-init-file ()
-  (interactive)
-  (find-file "~/.emacs.d/init.el"))
-;;绑定快捷键f1 为打开配置文件
-(global-set-key (kbd "<f1>")
-		'open-init-file)
+;;加载快捷键定义
+(load-file "~/.emacs.d/myconf/key.el")
 
 ;;启动自动补全
 (global-company-mode)
 
-
-
 ;;启动elisp括号匹配
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
-
 
 ;;安装空格删除插件
 (require 'hungry-delete)
 (global-hungry-delete-mode)
-
-
-;;定义打开插件列表的函数
-(defun open-pkg-list ()
-  (interactive)
-  (package-refresh-contents)
-  (package-list-packages))
-
-;;绑定f2打开插件列表
-(global-set-key (kbd "<f2>")
-		'open-pkg-list)
-
 
 ;;开启增强功能插件
 (ivy-mode 1)
@@ -60,8 +41,6 @@
 
 ;;自动加载被修改的文件
 (global-auto-revert-mode t)
-
-
 
 ;;禁止自动备份文件
 (setq auto-save-default nil)
