@@ -7,6 +7,9 @@
 ;;加载快捷键定义
 (load-file "~/.emacs.d/myconf/key.el")
 
+;;修改emacs默认行为
+(load-file "~/.emacs.d/myconf/better.el")
+
 ;;启动自动补全
 (global-company-mode)
 
@@ -39,12 +42,9 @@
 ;;设置左右括号自动补齐
 (smartparens-global-mode t)
 
-;;自动加载被修改的文件
-(global-auto-revert-mode t)
 
-;;禁止自动备份文件
-(setq auto-save-default nil)
-(setq make-backup-files nil)
+
+
 
 ;;增强窗口切换
 (require 'popwin)
