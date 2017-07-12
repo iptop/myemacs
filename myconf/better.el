@@ -38,3 +38,8 @@
 (require 'popwin)
 (popwin-mode t)
 
+;;设置默认读入文件编码
+(prefer-coding-system 'utf-8)
+
+;;设置写入文件编码
+(setq default-buffer-file-coding-system 'utf-8)
