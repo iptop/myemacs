@@ -1,11 +1,7 @@
-;;隐藏工具栏
-(tool-bar-mode -1)
+;;加载ui相关配置文件
+(load-file "./ui.el")
 
-;;隐藏滚动条
-(scroll-bar-mode -1)
 
-;;显示行号
-(global-linum-mode t)
 
 ;;打开配置文件的函数
 (defun open-init-file ()
@@ -18,17 +14,11 @@
 ;;启动自动补全
 (global-company-mode)
 
-;;设置光标样式为普通bar样式
-(setq-default cursor-type 'bar)
+
 
 ;;启动elisp括号匹配
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
-;;自动高亮光标所在的行
-(global-hl-line-mode)
-
-;;加载新主题
-(load-theme 'monokai t)
 
 ;;安装空格删除插件
 (require 'hungry-delete)
