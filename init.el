@@ -24,12 +24,6 @@
 ;;隐藏滚动条
 (scroll-bar-mode -1)
 
-;;设置缩进
-(electric-indent-mode -1)
-
-;;关闭启动画面
-(setq inhibit-splash-srceen t)
-
 ;;显示行号
 (global-linum-mode t)
 
@@ -61,6 +55,26 @@
 (global-hungry-delete-mode)
 
 
+;;定义打开插件列表的函数
+(defun open-pkg-list ()
+  (interactive)
+  (package-refresh-contents)
+  (package-list-packages))
+
+;;绑定f2打开插件列表
+(global-set-key (kbd "<f2>")
+		'open-pkg-list)
+
+
+;;配置增强版 M-x
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x")
+		'smex)
+
+
+
+
 ;;设置合适字体
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -76,4 +90,4 @@
  '(custom-safe-themes
    (quote
     ("a49760e39bd7d7876c94ee4bf483760e064002830a63e24c2842a536c6a52756" default)))
- '(package-selected-packages (quote (hungry-delete monokai-theme company))))
+ '(package-selected-packages (quote (smex hungry-delete monokai-theme company))))
