@@ -97,6 +97,11 @@
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 
+;;增强窗口切换
+(require 'popwin)
+(popwin-mode t)
+
+
 ;;设置合适字体
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
