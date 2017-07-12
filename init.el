@@ -103,6 +103,7 @@
  '(custom-safe-themes
    (quote
     ("a49760e39bd7d7876c94ee4bf483760e064002830a63e24c2842a536c6a52756" default)))
+ '(eldoc-idle-delay 0.1)
  '(package-selected-packages
    (quote
-    (counsel swiper smex hungry-delete monokai-theme company))))
+    (nodejs-repl smartparens counsel swiper smex hungry-delete monokai-theme company))))
