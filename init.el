@@ -91,6 +91,12 @@
 ;;自动加载被修改的文件
 (global-auto-revert-mode t)
 
+
+
+;;禁止自动备份文件
+(setq auto-save-default nil)
+(setq make-backup-files nil)
+
 ;;设置合适字体
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
