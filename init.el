@@ -21,7 +21,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family #("微软雅黑" 0 4 (charset chinese-gbk)) :foundry "outline" :slant normal :weight normal :height 100 :width normal)))))
+ '(default ((t (:family "微软雅黑" :foundry "outline" :slant normal :weight normal :height 100 :width normal)))))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -32,4 +32,4 @@
     ("a49760e39bd7d7876c94ee4bf483760e064002830a63e24c2842a536c6a52756" default)))
  '(package-selected-packages
    (quote
-    (expand-region company-web ac-emmet web-mode counsel-projectile php-mode projectile nodejs-repl smartparens counsel swiper smex hungry-delete monokai-theme company))))
+    (iedit expand-region company-web ac-emmet web-mode counsel-projectile php-mode projectile nodejs-repl smartparens counsel swiper smex hungry-delete monokai-theme company))))
