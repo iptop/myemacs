@@ -61,3 +61,12 @@
 (add-hook 'kill-emacs-hook
 
           '(lambda()(desktop-save "~/")))
+
+;;隐藏菜单栏
+(menu-bar-mode 0)
+
+;;启用树形撤销插件
+(global-undo-tree-mode t)
+
+
+
