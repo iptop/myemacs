@@ -21,7 +21,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "微软雅黑" :foundry "outline" :slant normal :weight normal :height 100 :width normal)))))
+ '(default ((t (:family "微软雅黑" :foundry "outline" :slant normal :weight normal :height 115 :width normal)))))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -29,7 +29,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("a49760e39bd7d7876c94ee4bf483760e064002830a63e24c2842a536c6a52756" default)))
+    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "a49760e39bd7d7876c94ee4bf483760e064002830a63e24c2842a536c6a52756" default)))
  '(package-selected-packages
    (quote
-    (undo-tree avy js2-mode iedit expand-region company-web ac-emmet web-mode counsel-projectile php-mode projectile nodejs-repl smartparens counsel swiper smex hungry-delete monokai-theme company))))
+    (zoom-frm spacemacs-theme undo-tree avy js2-mode iedit expand-region company-web ac-emmet web-mode counsel-projectile php-mode projectile nodejs-repl smartparens counsel swiper smex hungry-delete monokai-theme company))))

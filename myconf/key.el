@@ -19,3 +19,10 @@
 ;;绑定快捷键f10为播放宏
 (global-set-key (kbd "<f10>")
 		'kmacro-end-and-call-macro)
+
+;;设置字体缩放快捷键
+(global-set-key (kbd "C-<f12>")
+		'zoom-frm-in)
+
+(global-set-key (kbd "C-<f11>")
+		'zoom-frm-out)

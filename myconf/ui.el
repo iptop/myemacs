@@ -14,4 +14,4 @@
 (global-hl-line-mode)
 
 ;;加载新主题
-(load-theme 'monokai t)
+(load-theme 'spacemacs-dark t)
