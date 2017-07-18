@@ -32,4 +32,4 @@
     ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "a49760e39bd7d7876c94ee4bf483760e064002830a63e24c2842a536c6a52756" default)))
  '(package-selected-packages
    (quote
-    (zoom-frm spacemacs-theme undo-tree avy js2-mode iedit expand-region company-web ac-emmet web-mode counsel-projectile php-mode projectile nodejs-repl smartparens counsel swiper smex hungry-delete monokai-theme company))))
+    (less-css-mode vue-mode zoom-frm spacemacs-theme undo-tree avy js2-mode iedit expand-region company-web ac-emmet web-mode counsel-projectile php-mode projectile nodejs-repl smartparens counsel swiper smex hungry-delete monokai-theme company))))
