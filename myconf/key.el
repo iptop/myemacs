@@ -26,3 +26,13 @@
 
 (global-set-key (kbd "C-<f11>")
 		'zoom-frm-out)
+
+
+;;快速缩小
+(global-set-key (kbd "C-<f9>")
+		'my-zoom-out)
+
+;;快速放大
+(global-set-key (kbd "C-<f10>")
+		'my-zoom-in)
+

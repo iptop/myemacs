@@ -1,3 +1,6 @@
+(require 'cl-lib)
+
+
 ;;打开配置文件的函数
 (defun open-init-file ()
   (interactive)
@@ -8,3 +11,20 @@
   (interactive)
   (package-refresh-contents)
   (package-list-packages))
+
+;;快速放大
+(defun my-zoom-in ()
+  (interactive)
+  (setq my-zoom-in-i 0)
+  (loop do (setq my-zoom-in-i (1+ my-zoom-in-i))
+	(zoom-frm-in)
+	while
+	(< my-zoom-in-i 10)))
+;;快速缩小
+(defun my-zoom-out ()
+  (interactive)
+  (setq my-zoom-out-i 0)
+  (loop do (setq my-zoom-out-i (1+ my-zoom-out-i))
+	(zoom-frm-out)
+	while
+	(< my-zoom-out-i 10)))
