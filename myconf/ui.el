@@ -7,6 +7,9 @@
 ;;显示行号
 (global-linum-mode t)
 
+;;设置行号显示格式
+(setq linum-format "%d| ")
+
 ;;设置光标样式为普通bar样式
 (setq-default cursor-type 'bar)
 
