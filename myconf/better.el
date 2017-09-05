@@ -50,24 +50,24 @@
 
 ;;打开上次的文件记录
 
-(load "desktop") 
+;;(load "desktop") 
 
-(desktop-load-default)
+;;(desktop-load-default)
 
-(desktop-read)
+;;(desktop-read)
 
 ;;当emacs退出时保存文件打开状态
 
-(add-hook 'kill-emacs-hook
+;;(add-hook 'kill-emacs-hook
 
-          '(lambda()(desktop-save "~/")))
+  ;;        '(lambda()(desktop-save "~/")))
 
 ;;隐藏菜单栏
 (menu-bar-mode 0)
 
 ;;启用树形撤销插件
 (require 'undo-tree)
-(global-undo-tree-mode)
+;;(global-undo-tree-mode)
 
 
 
