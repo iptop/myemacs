@@ -6,6 +6,7 @@
 				counsel-M-x
 				emmet-expand-line
 				hungry-delete-forward
+				kill-region
 				sgml-slash
 				zoom-frm-in
 				zoom-frm-out

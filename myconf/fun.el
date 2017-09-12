@@ -28,3 +28,19 @@
 	(zoom-frm-out)
 	while
 	(< my-zoom-out-i 10)))
+
+;;设置自增计数器
+(setq auto-increment-counter 0)
+
+;;插入自增变量
+(defun insert-increment ()
+	(interactive)
+	(setq auto-increment-counter (+ auto-increment-counter 1))
+	(insert (number-to-string auto-increment-counter)))
+
+;;重置自增变量
+(defun clear-increment()
+	(interactive)
+	(setq auto-increment-counter 0))
+
+
