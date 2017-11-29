@@ -36,3 +36,12 @@
 (global-set-key (kbd "C-<f10>")
 		'my-zoom-in)
 
+
+;;设置buffer内快速跳转功能
+(global-set-key (kbd "C-a")
+								'ace-jump-mode)
+
+;;代码注释快捷键
+(global-set-key (kbd "C-?")
+								'comment-region)
+

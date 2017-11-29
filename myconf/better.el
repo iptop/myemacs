@@ -66,7 +66,7 @@
 (menu-bar-mode 0)
 
 ;;启用树形撤销插件
-(require 'undo-tree)
+;;(require 'undo-tree)
 ;;(global-undo-tree-mode)
 
 

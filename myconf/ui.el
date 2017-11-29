@@ -17,7 +17,7 @@
 (global-hl-line-mode)
 
 ;;加载新主题
-(load-theme 'spacemacs-dark t)
+(load-theme 'monokai t)
 
 ;;关闭tab键缩进
 (setq indent-tabs-mode nil)
@@ -44,5 +44,8 @@
 
 ;;text-mode下设置缩进
 (add-hook 'text-mode-hook 'set-retract)
+
+;;web-mode 下设置缩进
+(add-hook 'web-mode-hook 'set-retract)
 
 
