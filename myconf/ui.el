@@ -48,4 +48,5 @@
 ;;web-mode 下设置缩进
 (add-hook 'web-mode-hook 'set-retract)
 
-
+;;关闭启动欢迎页面
+(setq inhibit-splash-screen t)
