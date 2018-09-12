@@ -42,5 +42,8 @@
 (defun clear-increment()
 	(interactive)
 	(setq auto-increment-counter 0))
-
-
+;;全屏
+(defun fullscreen ()
+	(interactive)
+	(set-frame-parameter nil 'fullscreen
+											 (if (frame-parameter nil 'fullscreen) nil 'fullboth)))
