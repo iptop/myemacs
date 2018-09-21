@@ -66,8 +66,11 @@
 (menu-bar-mode 0)
 
 ;;启用树形撤销插件
-;;(require 'undo-tree)
-;;(global-undo-tree-mode)
+(require 'undo-tree)
+(global-undo-tree-mode)
 
-
-
+;; 光标移出页面顶部或底部不翻页
+;; 而仅是向上或下移动一行
+(setq scroll-step 1)
+(setq scroll-margin 5)
+(setq scroll-conservatively 10000)
